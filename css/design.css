@@ -1,0 +1,211 @@
+/*!
+Author: Kshitij Nariya
+Author URI: https://kshitijnariya.tech/
+Version: 1.0.0
+License: HorizonLight LLP Ltd.
+Text Domain: portfolio
+Tags: portfolio, blog, custom-site, kshitijnariya, horizonlight, design
+
+https://kshitijnariya.tech/, (C)2022 kshitijnariya.
+*/
+/*=================== fonts ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* color */
+    --bg-color: rgb(2, 2, 6); /* #020206 */
+    --bg-color-opacity: rgba(2, 2, 6,0.72);
+    --border-color: rgba(255,255,255,0.24);
+    --backdrop-filter: saturate(180%) blur(20px);
+    --button-primary: rgba(195, 216, 228, 0.07);
+    --button-secondary: transparent;
+
+
+
+    /* Font */
+    --font-default-size: 1em;
+    --font-primary-color: rgba(255, 255, 255, 1);
+    --font-secondary-color: rgba(255,255,255,0.47);
+    --font-poppins: 'Poppins', sans-serif;
+
+    /* Extra */
+    --default-border-radius: 5px;
+
+}
+
+:root-light {
+    --bg-color: rgb(195, 216, 228); /* #C3D8E4 */
+}
+/*
+
+#0D095F
+#3F41CF
+#C3D8E4
+#9B26B4
+
+*/
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Poppins", sans-serif;
+    quotes: "“" "”";
+    color: var(--font-primary-color);
+}
+
+a { 
+    color: var(--font-primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+a:link {
+    text-decoration: underline 2px;
+}
+button {
+    font-family: var(--font-poppins);
+    border-radius: var(--default-border-radius);
+    color: var(--font-primary-color);
+    font-size: 0.75em;
+}
+
+/* Reusable CSS */
+.d-flex {
+    display: flex;
+}
+.position-relative {
+    position: relative
+}
+.position-absolute {
+    position: absolute;
+}
+.align-item-center {
+    align-item: center;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/* Pre-define class */
+section {
+  padding: 0 6rem;
+}
+.col-100 {
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+}
+.col-70 {
+  flex: 0 0 auto;
+  width: 70%;
+}
+.col-50 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.col-30 {
+  flex: 0 0 auto;
+  width: 30%;
+}
+.glass-effect {
+  width: 100%;
+  height: 10rem;
+  background-color: var(--button-primary);
+  -webkit-backdrop-filter: var(--backdrop-filter);
+  backdrop-filter: var(--backdrop-filter);
+  border-radius: 7px;
+}
+
+/******** Header ********/
+.header{
+  height: 77px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid var(--button-primary);
+  background-color: var(--bg-color-opacity);
+  -webkit-backdrop-filter: var(--backdrop-filter);
+  backdrop-filter: var(--backdrop-filter);
+  transition: background-color 0.5s cubic-bezier(var(--bg-color));
+}
+nav{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 50%;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 8px;
+  position: relative;
+  font-family: var(--font-poppins);
+}
+nav a{
+  display: inline;
+  text-decoration: none !important;
+  font-size: var(--font-default-size);
+}
+
+
+/******** Introduction ********/
+.introduction {
+  height: auto;
+  width: 100%;
+  margin-top: 77px;
+}
+.head-t-p {
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 0;
+  align-items: center;
+  justify-content: center;
+}
+.head-title {
+  font-size: 1.2em;
+  margin: auto 0;
+}
+.head-text {
+  font-size: 1.2em;
+  margin: auto 0;
+  color: var(--font-secondary-color);
+}
+
+.primary-button {
+  width: 13rem;
+  height: 2.35rem;
+  background-color: var(--button-primary);
+  border: 0 solid var(--button-primary);
+  margin-bottom: 1rem;
+}
+
+.secondary-button {
+  width: 13rem;
+  height: 2.35rem;
+  background-color: var(--button-secondary);
+  border: 1px solid var(--button-primary);
+  margin-bottom: 1rem;
+}
