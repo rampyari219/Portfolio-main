@@ -24,6 +24,8 @@ https://kshitijnariya.tech/, (C)2022 kshitijnariya.
     --button-primary: rgba(195, 216, 228, 0.07);
     --button-secondary: transparent;
 
+    --odoo-color: rgba(160, 0, 115, 1);
+
 
 
     /* Font */
@@ -76,6 +78,7 @@ button {
     border-radius: var(--default-border-radius);
     color: var(--font-primary-color);
     font-size: 0.75em;
+    cursor: pointer;
 }
 
 /* Reusable CSS */
@@ -119,13 +122,23 @@ section {
   flex: 0 0 auto;
   width: 30%;
 }
+.odoo {
+  position: absolute;
+  width: 64.5%;
+  z-index: 1;
+  opacity: 1;
+  left: 25%;
+  top: 30%;
+}
 .glass-effect {
+  position: relative;
   width: 100%;
-  height: 10rem;
+  height: 32rem;
   background-color: var(--button-primary);
-  -webkit-backdrop-filter: var(--backdrop-filter);
   backdrop-filter: var(--backdrop-filter);
+  -webkit-backdrop-filter: var(--backdrop-filter);
   border-radius: 7px;
+  z-index: 2;
 }
 
 /******** Header ********/
