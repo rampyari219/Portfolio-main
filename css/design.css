@@ -50,16 +50,7 @@ https://kshitijnariya.tech/, (C)2022 kshitijnariya.
 #9B26B4
 
 */
-body, html {
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-color);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: "Poppins", sans-serif;
-    quotes: "“" "”";
-    color: var(--font-primary-color);
-}
+
 
 a { 
     color: var(--font-primary-color);
