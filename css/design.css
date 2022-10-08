@@ -14,7 +14,16 @@ https://kshitijnariya.tech/, (C)2022 kshitijnariya.
 * {
     box-sizing: border-box;
 }
-
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
+  quotes: "“" "”";
+  color: var(--font-primary-color);
+}
 :root {
     /* color */
     --bg-color: rgb(2, 2, 6); /* #020206 */
